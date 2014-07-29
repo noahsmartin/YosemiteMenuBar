@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "YosemiteStatusItem.h"
+#import "statusItemView.h"
 
 @interface AppDelegate ()
+@property (weak) IBOutlet NSMenu *menu;
+@property YosemiteStatusItem* statusItem;
 
 @end
 
@@ -16,6 +20,13 @@
             
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    self.statusItem = [[YosemiteStatusItem alloc] initWithLength:NSVariableStatusItemLength];
+    statusItemView* view = [[statusItemView alloc] init];
+    view.statusItem = self.statusItem.statusItem;
+    view.menu = self.menu;
+    [self.statusItem setCustomView:view];
+    [view setupMenu];
+    [self.statusItem startDrawing];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

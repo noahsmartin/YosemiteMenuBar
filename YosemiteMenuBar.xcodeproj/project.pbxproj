@@ -13,6 +13,8 @@
 		4F211E4919875694005465EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F211E4819875694005465EE /* Images.xcassets */; };
 		4F211E4C19875694005465EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F211E4A19875694005465EE /* Main.storyboard */; };
 		4F211E5819875694005465EE /* YosemiteMenuBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F211E5719875694005465EE /* YosemiteMenuBarTests.m */; };
+		4F211E63198757AF005465EE /* YosemiteStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F211E62198757AF005465EE /* YosemiteStatusItem.m */; };
+		4F211E6619875EB4005465EE /* statusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F211E6519875EB4005465EE /* statusItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		4F211E5119875694005465EE /* YosemiteMenuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YosemiteMenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F211E5619875694005465EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F211E5719875694005465EE /* YosemiteMenuBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YosemiteMenuBarTests.m; sourceTree = "<group>"; };
+		4F211E61198756C2005465EE /* YosemiteStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YosemiteStatusItem.h; sourceTree = "<group>"; };
+		4F211E62198757AF005465EE /* YosemiteStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YosemiteStatusItem.m; sourceTree = "<group>"; };
+		4F211E6419875EB4005465EE /* statusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statusItemView.h; sourceTree = "<group>"; };
+		4F211E6519875EB4005465EE /* statusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statusItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +88,11 @@
 				4F211E4219875694005465EE /* ViewController.h */,
 				4F211E4319875694005465EE /* ViewController.m */,
 				4F211E4519875694005465EE /* AppDelegate.h */,
+				4F211E6419875EB4005465EE /* statusItemView.h */,
+				4F211E6519875EB4005465EE /* statusItemView.m */,
 				4F211E4619875694005465EE /* AppDelegate.m */,
+				4F211E61198756C2005465EE /* YosemiteStatusItem.h */,
+				4F211E62198757AF005465EE /* YosemiteStatusItem.m */,
 				4F211E4819875694005465EE /* Images.xcassets */,
 				4F211E4A19875694005465EE /* Main.storyboard */,
 				4F211E3E19875694005465EE /* Supporting Files */,
@@ -216,8 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F211E4419875694005465EE /* ViewController.m in Sources */,
+				4F211E63198757AF005465EE /* YosemiteStatusItem.m in Sources */,
 				4F211E4119875694005465EE /* main.m in Sources */,
 				4F211E4719875694005465EE /* AppDelegate.m in Sources */,
+				4F211E6619875EB4005465EE /* statusItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +416,7 @@
 				4F211E5D19875694005465EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F211E5E19875694005465EE /* Build configuration list for PBXNativeTarget "YosemiteMenuBarTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +425,7 @@
 				4F211E6019875694005465EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
